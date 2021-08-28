@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url(https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 
 .Happy {
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'Waiting for the Sunrise', cursive; 
     $background: #48befe;
     $body: #fdfeff;
     $bodyWidth: 175px;
@@ -12,13 +12,13 @@
     $heartSize: 30px;
 
     p {
-        font-family: 'Open Sans', 'sans-serif';
-        color: #957DAD;
-        font-size: 34px;
-        font-weight: bold;
+        color: #3F3D56;
+        font-size: 54px;
+        font-weight: 700;
         position: absolute;
         left: 10%;
-        bottom: 20px;
+        bottom: 10px;
+        line-height: 60px;
     }
     
     @mixin characters {
@@ -28,12 +28,6 @@
       background: $body;
       position: relative;
       display: inline-block;
-    }
-    
-    body {
-      background: $background;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 12px;
     }
     
     .container {

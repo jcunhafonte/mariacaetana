@@ -1,52 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,700);
+@import url(https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
 
 .Madrinha {
-    font-family: 'Open Sans', 'sans-serif';
-    color: #957DAD;
+    font-family: 'Waiting for the Sunrise', cursive; 
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    .item-1, 
-    .item-2, 
-    .item-3 {
+    .item-1 {
         position: absolute;
         display: block;
-        top: 60px;
+        top: 130px;
         width: 80%;
         font-size: 34px;
         font-weight: bold;
-        animation-duration: 20s;
+        animation-duration: 6.66s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        animation-delay: 12s;
+        opacity: 0;
     }
 
-    .item-1{
+    .item-1 {
         animation-name: anim-1;
     }
 
-    .item-2{
-        animation-name: anim-2;
-    }
-
-    .item-3{
-        animation-name: anim-3;
-    }
-
     @keyframes anim-1 {
-        0%, 8.3% { left: -100%; opacity: 0; }
-        8.3%,25% { left: 10%; opacity: 1; }
-        33.33%, 100% { left: 110%; opacity: 0; }
-    }
-
-    @keyframes anim-2 {
-        0%, 33.33% { left: -100%; opacity: 0; }
-        41.63%, 58.29% { left: 10%; opacity: 1; }
-        66.66%, 100% { left: 110%; opacity: 0; }
-    }
-
-    @keyframes anim-3 {
         0%, 66.66% { left: -100%; opacity: 0; }
         74.96%, 91.62% { left: 10%; opacity: 1; }
         100% { left: 10%; opacity: 1; }
@@ -55,7 +35,6 @@
     .Baby .wrapper {
         top: 60%
     }
-
 
     %test {
         position: absolute;
@@ -72,5 +51,13 @@
         font-size: 20px;
         transition: all .5s;
         background-color: #957DAD;
+    }
+
+    .wrapping {
+        display: flex;
+        justify-content: left;
+        margin-left: 38px;
+        margin-right: 38px;
+        margin-top: 60px;
     }
 }
