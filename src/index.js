@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Padrinho from './Padrinho';
 import Madrinha from './Madrinha';
+import Happy from './Happy';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
@@ -23,6 +24,9 @@ ReactDOM.render(
         </Route>
         <Route path="/madrinha">
           <Madrinha />
+        </Route>
+        <Route path="/happy">
+          <Happy />
         </Route>
       </Switch>
     </Router>
