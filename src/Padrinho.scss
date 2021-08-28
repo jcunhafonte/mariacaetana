@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,700);
+
+.Padrinho {
+    font-family: 'Open Sans', 'sans-serif';
+    color: #957DAD;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .item-1, 
+    .item-2, 
+    .item-3 {
+        position: absolute;
+        display: block;
+        top: 60px;
+        width: 80%;
+        font-size: 34px;
+        font-weight: bold;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .item-1{
+        animation-name: anim-1;
+    }
+
+    .item-2{
+        animation-name: anim-2;
+    }
+
+    .item-3{
+        animation-name: anim-3;
+    }
+
+    @keyframes anim-1 {
+        0%, 8.3% { left: -100%; opacity: 0; }
+        8.3%,25% { left: 10%; opacity: 1; }
+        33.33%, 100% { left: 110%; opacity: 0; }
+    }
+
+    @keyframes anim-2 {
+        0%, 33.33% { left: -100%; opacity: 0; }
+        41.63%, 58.29% { left: 10%; opacity: 1; }
+        66.66%, 100% { left: 110%; opacity: 0; }
+    }
+
+    @keyframes anim-3 {
+        0%, 66.66% { left: -100%; opacity: 0; }
+        74.96%, 91.62% { left: 10%; opacity: 1; }
+        100% { left: 10%; opacity: 1; }
+    }
+
+    .Baby .wrapper {
+        top: 60%
+    }
+
+
+    %test {
+        position: absolute;
+        content: '';
+        transition: all .5s;
+    }
+        
+    .button { 
+        display: inline-block; 
+        padding: 10px 20px;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all .5s;
+        background-color: #957DAD;
+    }
+}
